@@ -1,6 +1,6 @@
 {
   "name": "react-intl-cra",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Extract messages of `Creact React App` from the command line",
   "repository": "https://github.com/evenchange4/react-intl-cra",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -27,7 +27,6 @@
     "babel-plugin-react-intl": "^2.4.0",
     "chalk": "^2.3.0",
     "glob": "^7.1.2",
-    "metro-react-native-babel-preset": "^0.64.0",
     "ramda": "^0.25.0",
     "yargs": "^11.0.0"
   },

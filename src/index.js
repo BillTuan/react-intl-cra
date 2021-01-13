@@ -19,7 +19,7 @@ function extract(
   const messages = contents
     .map(content =>
       babel.transform(content, {
-        presets: [require.resolve('metro-react-native-babel-preset')],
+        presets: ['module:metro-react-native-babel-preset'],
         plugins: [
           require.resolve('babel-plugin-react-intl'),
           ...reqBabelPlugins,
