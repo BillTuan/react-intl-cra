@@ -2,7 +2,7 @@
 const fs = require('fs');
 const R = require('ramda');
 const glob = require('glob');
-const babel = require('babel-core');
+const babel = require('@babel/core');
 
 process.env.NODE_ENV = 'production'; // For babel.transform
 
@@ -19,7 +19,7 @@ function extract(
   const messages = contents
     .map(content =>
       babel.transform(content, {
-        presets: [require.resolve('babel-preset-react-app')],
+        presets: [require.resolve('metro-react-native-babel-preset')],
         plugins: [
           require.resolve('babel-plugin-react-intl'),
           ...reqBabelPlugins,
